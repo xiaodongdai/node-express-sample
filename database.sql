@@ -1,11 +1,8 @@
-CREATE TABLE album (
-  id serial primary key,
-  description varchar(255)
-);
-
-CREATE TABLE photo (
-  id serial primary key,
-  album_id integer,
-  description varchar(255),
-  filepath varchar(255)
+CREATE TABLE rank (
+ id serial primary key,
+ time numeric,
+ username varchar(32),
+ ipaddr   varchar(16),
+ country  varchar(32),
+ city     varchar(32)
 );
